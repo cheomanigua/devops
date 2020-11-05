@@ -1,0 +1,33 @@
+plugin: gcp_compute
+projects:
+  - vpn-server-sasp
+service_account_file: /home/cheo/sergio/gce_sa_keys/ansible-sa.json
+auth_kind: serviceaccount
+scopes:
+ - 'https://www.googleapis.com/auth/cloud-platform'
+ - 'https://www.googleapis.com/auth/compute.readonly'
+
+
+
+zones: # populate inventory with instances in these regions
+  #- us-central1-a
+filters:
+#   - machineType = n1-standard-1
+#   - scheduling.automaticRestart = true AND machineType = n1-standard-1
+keyed_groups:
+  # Create groups from GCE labels
+  - prefix: gcp
+    key: labels
+  - prefix: zone
+    key: zone
+  # Create groups by filtering key-values on lables and lists
+groups:
+  cms: "'server' in (labels|list)"
+  development: "'python' in name"
+hostnames:
+  # List host by name instead of the default public ip
+  - name
+compose:
+  # Set an inventory parameter to use the Public IP address to connect to the host
+  # For Private ip use "networkInterfaces[0].networkIP"
+  ansible_host: networkInterfaces[0].accessConfigs[0].natIP

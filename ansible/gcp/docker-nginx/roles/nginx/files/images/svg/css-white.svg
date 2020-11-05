@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="437.29px"
+   height="491.728px"
+   viewBox="85.5 210.272 437.29 491.728"
+   enable-background="new 85.5 210.272 437.29 491.728"
+   xml:space="preserve"
+   sodipodi:docname="css_white.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
+   id="metadata15"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>CSS3 Logo</dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs13"><filter
+     inkscape:label="Light Eraser"
+     style="color-interpolation-filters:sRGB;"
+     id="filter829"><feColorMatrix
+       values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -2.125 -7.154 -0.721 7 0 "
+       result="colormatrix"
+       id="feColorMatrix825" /><feComposite
+       in2="colormatrix"
+       operator="arithmetic"
+       k2="1"
+       result="fbSourceGraphic"
+       id="feComposite827" /><feColorMatrix
+       result="fbSourceGraphicAlpha"
+       in="fbSourceGraphic"
+       values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+       id="feColorMatrix831" /><feColorMatrix
+       id="feColorMatrix833"
+       values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -2.125 -7.154 -0.721 7 0 "
+       result="colormatrix"
+       in="fbSourceGraphic" /><feComposite
+       in2="colormatrix"
+       id="feComposite835"
+       operator="arithmetic"
+       k2="1"
+       result="composite" /></filter><filter
+     inkscape:label="Fade to Black or White"
+     style="color-interpolation-filters:sRGB;"
+     id="filter1308"><feColorMatrix
+       values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -2.125 -7.154 -0.721 7 0 "
+       result="colormatrix"
+       id="feColorMatrix1304" /><feComposite
+       in2="colormatrix"
+       operator="arithmetic"
+       k2="1"
+       result="fbSourceGraphic"
+       id="feComposite1306" /><feColorMatrix
+       result="fbSourceGraphicAlpha"
+       in="fbSourceGraphic"
+       values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+       id="feColorMatrix1322" /><feColorMatrix
+       id="feColorMatrix1324"
+       values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+       in="fbSourceGraphic" /></filter></defs><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1879"
+   inkscape:window-height="1052"
+   id="namedview11"
+   showgrid="false"
+   inkscape:pagecheckerboard="true"
+   inkscape:zoom="0.47994013"
+   inkscape:cx="218.645"
+   inkscape:cy="245.864"
+   inkscape:window-x="41"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<title
+   id="title2">CSS3 Logo</title>
+
+
+<g
+   id="g1290"
+   style="filter:url(#filter1308)"><polygon
+     style="filter:url(#filter829)"
+     id="polygon4"
+     points="128.668,652.845 89.21,210.272 522.79,210.272 483.29,652.775 305.735,702 "
+     fill="#1572B6" /><polygon
+     id="polygon6"
+     points="306,664.375 449.474,624.599 483.229,246.459 306,246.459 "
+     fill="#33A9DC" /><path
+     id="path8"
+     d="M167.739,293.569l-0.308,54.766H390.34l-0.08,35.375H167.203l-0.161,54.766h222.909l-0.293,62.462  l-84.061,29.75l-83.639-29.75l0.063-27.087h-54.765l-0.251,65.719l138.353,49.289l138.877-49.289l0.467-98.873l0.141-19.834  l0.568-127.292L167.739,293.569L167.739,293.569z"
+     fill="#FFFFFF" /></g>
+</svg>

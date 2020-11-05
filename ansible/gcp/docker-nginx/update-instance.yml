@@ -1,0 +1,7 @@
+---
+- name: Update the repositories
+  gather_facts: no
+  hosts: cms 
+  become: yes
+  roles:
+    - repositories 

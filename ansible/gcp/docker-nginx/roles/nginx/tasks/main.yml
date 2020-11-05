@@ -1,0 +1,39 @@
+---
+- name: Copy website content and Dockerfile to remote host
+  copy:
+    src: /home/cheo/sergio/ansible-gce/nginx/roles/nginx/files
+    dest: /root
+    owner: root
+    group: root
+    mode: preserve
+
+- name: Build Docker image
+  community.general.docker_image:
+    name: mynginx
+    build:
+      pull: yes
+      path: /root/files
+    source: build
+
+- name: Start container
+  community.general.docker_container:
+    name: html-hero
+    image: mynginx
+    pull: no
+    ports:
+      - '80:80'
+
+
+# - name: Pull default Docker image
+#   docker_image:
+#     name: "{{ default_container_image }}"
+#     source: pull
+
+# Creates the number of containers defined by the variable create_containers, using values from vars file
+# - name: Create default containers
+#   docker_container:
+#     name: "{{ default_container_name }}{{ item }}"
+#     image: "{{ default_container_image }}"
+#     command: "{{ default_container_command }}"
+#     state: present
+#   with_sequence: count={{ create_containers }}

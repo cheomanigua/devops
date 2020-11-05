@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Development studio">
+  <meta name="author" content="Sergio Sanchez">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Web Development</title>
+</head>
+
+<body>
+  <script>
+  // Make the navbar solid when scrolling down
+    window.onscroll = () => {
+      if (window.pageYOffset > 150) {
+        document.querySelector('nav').style.background = "var(--color-auxiliary)";
+        document.querySelector('nav').style.transition = "2s";
+      } else {
+        document.querySelector('nav').style.background = "transparent";
+      }
+    }
+  </script>
+
+  <! HEADER>
+  <header id="home">
+    <div class="bg-image"></div>
+    <nav>
+      <div id="logo"><a href="#home">DIGITAL REALM</a></div>
+      <ul>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#about">Nosotros</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+      <h1>Desarrollo Web y Marketing</h1>
+      <h3>Da visibilidad a tu empresa, negocio o proyecto con nuestros servicios</h3>
+      <a href="#contact" class="btn">Contáctanos</a>
+  </header>
+
+  <! MAIN>
+  <main>
+
+    <section id="sectiona">
+      <h1>Velocidad</h1>
+      <p>Garantizamos una velocidad de navegación superior a la media. Utilizamos tecnologías innovadoras que mejoran de forma espectacular la carga de datos.
+      </p>
+    </section>
+
+    <section id="services">
+      <div class="card">
+        <img src="images/desarrolloweb.jpeg" alt="Desarrollo Web" />
+        <div class="card-content">
+          <h3 class="card-title">Desarrollo Web</h3>
+          <p>Diseño e implementación del front-end, desarrollo del back-end y bases de datos, configuración de servidores y contenedores.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/aplicacionesmoviles.jpg" alt="Aplicaciones móviles" />
+        <div class="card-content">
+          <h3 class="card-title">Aplicaciones Móviles</h3>
+          <p>Desarrollo de aplicaciones nativas para Android y iOS, mejorando de forma significativa la experiencia del usuario en su dispositivo móvil.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/marketingonline.jpeg" alt="Marketing Online" />
+        <div class="card-content">
+          <h3 class="card-title">Marketing Online</h3>
+          <p>Estudio de mercado y estrategias de marketing. Implementación SEO y posicionamiento en motores de búsqueda.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectionb">
+      <h1>Compatibilidad</h1>
+      <p>Desarrollamos sitios web compatibles no sólo con los stándares de los navegadores actuales, sino con navegadores antiguos que no están actualizados con las últimas tecnologías.
+      </p>
+    </section>
+
+    <section id="about">        
+      <div class="twoColumns">
+        <div class="text">Diseño "responsive" para que la navegación y experiencia del usuario con la interfaz sea siempre perfecta independientemente del dispositivo utilizado</div>
+        <div class="illustration"><img src="images/mobile.png" alt="Mobile" /></div>
+      </div>
+      <div class="twoColumns">
+        <div class="illustration"><img src="images/charts.png" alt="Charts" /></div>
+        <div class="text">Conseguimos las puntuaciones con los valores máximos en las pruebas de rendimiento y SEO de stándares como Lighthouse</div>
+      </div>
+      <div class="twoColumns">
+        <div class="text">Ofrecemos formación para el mantenimiento e implementación de nuevas funcionalidades de tu sitio web en el futuro</div>
+        <div class="illustration"><img src="images/team-collab.png" alt="Collaboration" /></div>
+      </div>
+    </section>
+
+    <section id="Sectionc">
+      <h1>Seguridad</h1>
+      <p>Los sitios web que desarrollamos son de los más seguros: implementamos SSL para encriptar el tráfico, no utilizamos tecnologías vulnerables y mantenemos un diseño sencillo y robusto que aisla la aplicación de codigo malicioso.
+      </p>
+    </section>
+
+    <section id="contact">
+
+      <div class="box">
+        <h3>Contacto</h3>
+        <table>
+          <tr>
+            <td>Móvil</td>
+            <td>+3469696969</td>
+          </tr>
+          <tr>
+            <td>Fijo</td>
+            <td>+3469696969</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>info@digitalrealm.es</td>
+          </tr>
+        </table>
+      </div>
+      <div class="box">
+        <h3>Tecnologías</h3>
+        <div class="technologies">
+          <img src="images/svg/html-5.svg" alt="html"/>
+          <img src="images/svg/css-cyan.svg" alt="css"/>
+          <img src="images/svg/javascript-white.svg" alt="javascript"/>
+          <img src="images/svg/nodejs-white.svg" alt="nodejs"/>
+          <img src="images/svg/npm-white.svg" alt="npm"/>
+          <img src="images/svg/react-white.svg" alt="react"/>
+          <img src="images/svg/gatsby-white.svg" alt="gatsby"/>
+          <img src="images/svg/graphql-white.svg" alt="graphql"/>
+          <img src="images/svg/git-white.svg" alt="git"/>
+          <img src="images/svg/github-white.svg" alt="github"/>
+          <img src="images/svg/netlify-white.svg" alt="netlify"/>
+        </div>
+    </section> 
+
+  </main>
+
+  <! FOOTER >
+  <footer id="mainFooter">
+    <div><a href="#home">Digital Realm</a> &#169; 2020</div>
+    <div>Project by Sergio Sánchez</div>
+  </footer>
+
+</body>
+</html>

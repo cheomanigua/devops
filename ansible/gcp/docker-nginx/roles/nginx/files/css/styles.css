@@ -1,0 +1,285 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #000;
+  --color-secondary: rgb(255, 255, 255);
+  --color-complementary: rgb(47, 153, 223);
+  --color-auxiliary: #333;
+  --color-odd:  #eee;
+  --color-shadow: rgba(0,0,0,0.2);
+  --vh: 100vh;
+  --maxvh: 120vh;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* font-size: 62.5%;
+  font-family: "DosisBold", "Courier New", Courier, monospace;  */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-auxiliary);
+  color: var(--color-secondary);
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+main {
+  background: var(--color-secondary);
+}
+
+section {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  padding: 5rem 2em 5rem 2rem;
+}
+
+section:nth-of-type(odd) {
+  background: var(--color-odd);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/****** HEADER ******/
+header {
+  height: var(--vh);
+  color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 1rem;
+
+}
+
+header .bg-image {
+  position: absolute;
+   background: var(--color-auxiliary) url('https://images.unsplash.com/photo-1582224369048-e4d2d7a6ba30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1074&q=80');
+  /*background: var(--color-auxiliary);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: var(--vh);
+  z-index:-1;
+  opacity: 0.2;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--color-complementary);
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1em 2em;
+  margin: .5em 0;
+  transition: .5s;
+}
+
+.btn:hover {
+  background: var(--color-secondary);
+  color: var(--color-auxiliary);
+}
+
+
+/****** NAVBAR ******/
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: .45em 0; 
+}
+
+#logo {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;  
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  padding: .5rem 1rem;
+  transition: ease .5s;
+}
+
+nav a:hover {
+  background: var(--color-complementary);
+}
+
+
+/******** SERVICES SECTION *******/
+
+.card {
+  margin: 1em 0;
+  box-shadow: 0 4px 8px 0 var(--color-shadow);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 var(--color-shadow);
+}
+
+.card-content {
+  padding: 2px 16px;
+}
+
+
+/****** ABOUT SECTION ********/
+
+
+
+/******* CONTACT *********/
+
+.box{
+  padding: 1em 1em;
+  color: var(--color-secondary);
+  background: var(--color-auxiliary);
+}
+
+.box:first-child {
+  background: var(--color-complementary);
+}
+
+#contact .box img {
+  max-width: 40px;
+  margin: .2em;
+}
+
+table {
+  text-align: left;
+  width: 100%;
+}
+
+td {
+  width: 30%;
+  text-align: center;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/****** FOOTER START ******/
+#mainFooter {
+  padding: 2em;
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+#mainFooter a {
+  color: var(--color-complementary);
+  text-decoration: none;
+}
+
+
+/****** MEDIA QUERY ********/
+
+@media(min-width: 600px) {
+  header h1, header h3 {
+    padding-bottom: 5rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  #services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1em;
+  }
+
+  .twoColumns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+  }
+
+  .text {
+    flex: 1;
+    padding: 2rem 2rem;
+  }
+  
+  .illustration {
+    padding: 2rem 2rem;
+    flex: 2;
+    min-width: 20rem;
+    max-width: 25rem;
+  }
+
+  Img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  
+  .box {
+    height: 13rem;
+  }
+}
+
+@media(min-width: 1200px) {
+  #services {
+    width: 70%;
+    margin: auto;
+  }
+
+  #contact {
+    max-width: 50%;
+    margin: auto;
+  }
+}
